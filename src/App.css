@@ -1,38 +1,67 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: lightgreen;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-container {
+  background-color: #fff;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+}
+
+form {
   text-align: center;
+  padding: 46px 36px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-success {
+  background-color: #2dbbf5;
+  color: #fff;
+  padding: 10px;
+  font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  background-color: #80808016;
+  color: grey;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 100%;
+  padding: 13px;
+  border-radius: 6px;
+  margin: 12px auto;
+  border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  font-size: 14px;
+  padding: 13px 40px;
+  border: none;
+  margin: 12px auto;
+  width: 100%;
+  background: #05c905;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.form-alert {
+  font-size: 12px;
+  text-align: start;
+  color: red;
+  margin-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+
+@media (max-width: 400px) {
+  .form-container {
+    width: 320px;
   }
 }
